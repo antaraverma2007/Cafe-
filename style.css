@@ -1,0 +1,103 @@
+/* reusable */
+
+:root{
+    /*main colors*/
+
+    --brown-dark: #28150f;   
+    --brown: #542719;        
+    --coffee: #7a3e25;       
+    --cream: #fff7ea;        
+    --cream-dark: #f1dfc9;   
+    --orange: #f47a35;       
+    --orange-light: #ffb45c; 
+    --yellow: #ffd15c;       
+    --pink: #ef6da8;         
+    --pink-light: #ffd6e5;   
+    --purple: #7654d7;       
+    --green: #668c57;        
+    --cyan: #44c8d5;         
+    --white: #ffffff;        
+    --black: #19110e;  
+
+    /*shadow*/
+    --text-light: #806e64;  
+
+    --shadow: 0 25px 70px rgba(65, 30, 15, 0.12);
+    --small-shadow: 0 12px 35px rgba(65, 30, 15, 0.08);
+
+    /*rounded*/
+    --radius-large: 45px;   
+    --radius-medium: 30px;   
+    --radius-small: 18px;
+
+
+}
+
+/*every or random*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    background: var(--cream);
+    color: var(--black);
+
+}
+
+::selection {
+    background: var(--orange);
+    color: var(--white);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button,input,textarea,select{
+    font-family: inherit;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/*navbar*/
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82%;
+    padding: 0 5%;
+    display: flex;
+    z-index: 1000;
+    background: rgba(255, 247, 234, 0.82);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(84, 39, 25, 0.08); 
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-cup{
+    
+}
